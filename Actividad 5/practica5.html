@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="">
+        <label for="nombre" >Nombre</label>
+        <input type="text" required name="nombre" id="nombre" placeholder="John">
+        
+        <label for="apellido">Apellido</label>
+        <input type="text" required name="apellido" id="apellido" placeholder="Doe">
+        
+        
+    </form>
+
+    <hr>
+    <form>
+        <fieldset>
+            <label for="nombre2">Nombre</label>
+            <input type="text" required name="nombre2" id="nombre2" placeholder="Ingresa tu nombre">
+            <label for="correo">Correo</label>
+            <input type="email" required name="correo" id="correo" placeholder="johndoe@hotmail.com">
+
+            <label for="edad">Edad</label>
+            <input type="number" step="any" required name="edad" id="edad">
+
+            <hr>
+
+            <label for="lenguaje">Lenguaje favorito</label>
+            <input type="radio" name="lenguaje" id="js">Javascript
+            <input type="radio" name="lenguaje" id="python">Python
+            <input type="radio" name="lenguaje" id="C">C
+            <br><br><br>
+            <label for="paises">Paises que he visitado</label>
+            <input type="checkbox" name="EU" id="EU">Estados Unidos
+            <input type="checkbox" name="japon" id="japon">Japon
+            <input type="checkbox" name="canada" id="canada">Canada
+            <input type="checkbox" name="colombia" id="colombia">Colombia
+            <br><br><br>
+            <label for="mensaje">Mensaje o comentario:</label>
+            <textarea name="mensaje" id="mensaje" aria-rowspan="3">
+            </textarea>
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
