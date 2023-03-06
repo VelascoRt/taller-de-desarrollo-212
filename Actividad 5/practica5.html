@@ -40,11 +40,63 @@
             <input type="checkbox" name="japon" id="japon">Japon
             <input type="checkbox" name="canada" id="canada">Canada
             <input type="checkbox" name="colombia" id="colombia">Colombia
+            <select name="paises" id="paises">
+                <option value="1">EU</option>
+                <option value="2">Canada</option>
+                <option value="3">Japon</option>
+            </select>
+            <form name="formulario1">
+                <label for="usuario">Usuario</label>
+                <input type="text" required name="usuario">
+                <label for="password">Password</label>
+                <input type="password" required name="password">
+                <input type="submit" name="Enviar">
+            </form>
+            <br>
+            <form name="forma1">
+                <label for="color">Color favorito:</label>
+                <input type="color" name="color">
+            </form>
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" name="nac">
+            <p>
+                <label for="entrada">Horario de partida:</label>
+                <input type="datetime-local" id="viaje" name="viaje">
+            </p>
+            <p>
+                <label for="archivo">Ingresa una fotografia:</label>
+                <input type="file" name="archivo" id="archivo">
+            </p>
+            <p>
+                <label for="edad">Ingresa tu edad</label>
+                <input type="number" name="edad" id="edad" placeholder="10" value="18">
+            </p>
+            <p>
+                <label for="volumen">Volumen (entre 0 a 100):</label>
+                <input type="range" name="volumen" id="volumen" min="0" max="100">
+                
+            </p>
+
+            <p>
+                <label for="hora">Hora:</label>
+                <input type="time" name="hora" id="hora">
+            </p>
+
+           <p>
+                <label for="semana">Semana:</label>
+                <input type="week" name="semana" id="semana">
+           </p> 
+           <p>
+            <label for="celular">Telefono</label>
+            <input type="tel" name="celular" id="celular"
+            pattern="[0-9]{3} [0-9]{3}-[0-9]{4}" 
+            placeholder="Ingresa un numero de celular">
+           </p>
             <br><br><br>
             <label for="mensaje">Mensaje o comentario:</label>
             <textarea name="mensaje" id="mensaje" aria-rowspan="3">
             </textarea>
-
+            
             <input type="submit" value="Enviar">
         </fieldset>
     </form>
