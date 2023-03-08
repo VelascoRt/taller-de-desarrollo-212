@@ -1,0 +1,50 @@
+    .titulo {
+        font-size: 100px;
+    }
+    
+    h1, p {
+        background-color: cyan;
+    }
+
+    #capa1 {
+        background-color: yellow;
+        border: 10px solid purple;
+        margin-bottom: 10px;
+    }
+
+    a:link {
+        color: brown;
+        padding: 30px;
+        text-decoration: none;
+    }
+
+    a:visited{
+        color:blueviolet;
+    }
+
+    a:hover{
+        background-color: crimson;
+        font-size: 20px;
+    }
+
+    a:active{
+        color: blue;
+    }
+    /*
+    p {
+    color:red;
+    text-align: center;
+  }
+
+  #paral {
+    font-size: 40px;
+  }
+
+  .center {
+    text-align: center;
+    color: green;
+    opacity:  0.5;
+    width: 100%;
+    font-size: 30px;
+  }
+  */
