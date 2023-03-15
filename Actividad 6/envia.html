@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="formulario"
+    method="get"
+    action="envia.html"
+    style="margin-bottom: 300px;">
+    <fieldset>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad">
+
+        <label for="nivel">Nivel ingles:</label>
+        <meter type="nivel" name="nivel" value="0.1">
+        10%
+        </meter>
+
+        <br><br><br>
+
+        <label for="escala">Escala</label>
+        <input type="range" name="escala" id="escala">
+
+        <input type="submit" value="Enviar">
+        
+    </fieldset>
+    </form>
+</body>
+</html>
