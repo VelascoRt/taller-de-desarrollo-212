@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        html {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Este es un texto</h1>
+    <p id="texto">Este es un parrafo, var, let, const</p>
+    <ul id="colores">
+        <li>Rojo</li>
+        <li>Verde</li>
+        <li>Azul</li>
+    </ul>
+
+    <script>
+        var titulo;
+        titulo=document.getElementById("titulo");
+        titulo.innerHTML = "Feliz regreso de vacaciones";
+
+        var texto;
+        texto = document.getElementById("texto");
+        texto.style.backgroundColor = "red";
+        texto.style.fontSize = "50px";
+
+        var colores;
+        colores = document.getElementById("colores");
+        colores.style.color = "purple";
+        colores.style.fontSize = "50px";
+        colores.style.display = "none";
+        colores.style.display = "block";
+
+        //Notacion camel case
+        function cambiaColor(){
+            console.log("Si entro a la funcion", 5 + 10);
+            colores.style.color = "#ff0000"; 
+        }
+
+        cambiaColor();
+
+        document.write("Este es un numero generado con JS");
+        document.write("\n", 50 + 60);
+        //window.alert("Este es una alerta");
+
+        var cadena = "Hola consola de JS";
+        console.log(cadena);
+        console.log("Solo para desarolladores");
+
+        let a, b, c;
+        a = 5;
+        b = 6;
+        c=a+b;
+        console.log("Resultado: ",c);
+
+        var radio = 10;
+        const PI = 3.1416;
+
+        function calcularArea(){
+            let numero = 10.5;
+            var numeroNuevo = 10;
+
+            let soyCadena = "jejeje";
+            let soyCadena1 = "jejeje";
+            let soyCadena2 = "jejeje";
+
+            let $multi_plica = numero * numeroNuevo;
+            console.log($multi_plica);
+            let areaTemporal = PI * radio * radio;
+            return areaTemporal;
+            
+        }
+
+        console.log("El area es: ", calcularArea());
+
+        var auto = "BMW";
+            var auto;
+            console.log(auto);
+            //Hosting
+            let variableLocal = 10;
+            {
+                let variableLocal = 2;
+                console.log("Primero: ", variableLocal);
+            }
+
+
+    </script>
+    
+</body>
+</html>
