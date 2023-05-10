@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .flex-container{ 
+            display: flex;
+            background-color: rgb(240, 193, 128);
+            height: 400px;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .flex-container2{ 
+            display: flex;
+            background-color: lightcoral;
+            height: 400px;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
+
+        .flex-container3{ 
+            display: flex;
+            flex-wrap: wrap;
+            background-color: lightsalmon;
+            height: 600px;
+            align-content: flex-start;
+            justify-content: space-around;
+        }
+
+        .flex-container div {
+            background-color: lightgoldenrodyellow;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        .flex-container2 div {
+            background-color: lightgoldenrodyellow;
+            width: 100px;
+            text-align: center;
+            line-height: 75px;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        .flex-container3 div {
+            background-color: lightgoldenrodyellow;
+            width: 100px;
+            text-align: center;
+            line-height: 75px;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="flex-container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <div class="flex-container2">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <div class="flex-container3">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+
+
+</body>
+</html>
